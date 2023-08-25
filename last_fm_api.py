@@ -2,9 +2,8 @@ from requests import Response, session, Session
 from bs4 import BeautifulSoup, Tag
 from datetime import datetime
 from time import sleep
-from typing import Union
-from song import Song
-from utils import url_decode, flatten_list, is_cached, read_from_cache, url_encode, write_to_cache
+from .song import Song
+from .utils import url_decode, flatten_list, is_cached, read_from_cache, url_encode, write_to_cache
 
 HEADERS = {
   "Cache-Control": "max-age=0", 

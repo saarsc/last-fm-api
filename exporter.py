@@ -1,6 +1,6 @@
 import json
 import csv
-from song import Song
+from .song import Song
 
 class Exporter:
   def __init__(self, as_csv, as_json, as_datebase, file_name):

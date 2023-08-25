@@ -1,6 +1,6 @@
 import csv
 import json
-from song import Song
+from .song import Song
 from datetime import datetime
 from contextlib import contextmanager
 
