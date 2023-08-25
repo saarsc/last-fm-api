@@ -1,15 +1,17 @@
-import urllib.parse
 import itertools
 import os
 import shutil
+import urllib.parse
+
 
 def split_to_chunks(list: list, chunk_size: int):
   for i in range(0, len(list), chunk_size):
-    yield list[i:i + chunk_size]
+    yield list[i : i + chunk_size]
 
 
 def url_decode(string: str) -> str:
   return urllib.parse.unquote_plus(string)
+
 
 def url_encode(string: str) -> str:
   return urllib.parse.quote_plus(string)
@@ -34,6 +36,7 @@ def write_to_cache(file_name: str, cache_folder: str, data):
 
 def is_cached(file_name, cache_folder):
   return os.path.exists(f"{cache_folder}/{file_name}.html")
+
 
 def reset_cache(cache_folder: str):
   shutil.rmtree(cache_folder)

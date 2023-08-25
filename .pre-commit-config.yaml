@@ -1,0 +1,12 @@
+repos:
+  # - repo: https://github.com/pausan/cblack
+  #   rev: master
+  #   hooks:
+  #     - id: cblack
+  #       entry: cblack
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.5.1
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - types-requests 
