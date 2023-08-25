@@ -6,3 +6,4 @@ class Song(TypedDict):
   artist:str
   album:str
   timestamp:datetime
+  epoch:str

@@ -11,6 +11,9 @@ def split_to_chunks(list: list, chunk_size: int):
 def url_decode(string: str) -> str:
   return urllib.parse.unquote_plus(string)
 
+def url_encode(string: str) -> str:
+  return urllib.parse.quote_plus(string)
+
 
 def flatten_list(list_of_lists: list[list]) -> list:
   return list(itertools.chain(*list_of_lists))
